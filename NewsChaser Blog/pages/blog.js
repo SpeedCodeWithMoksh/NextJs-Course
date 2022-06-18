@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const blog = () => {
   return (
@@ -15,12 +16,12 @@ const blog = () => {
         <div className="md:flex-grow">
           <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">Full Web</h2>
           <p className="leading-relaxed">blog, in full Web log or Weblog, online journal where an individual, group, or corporation presents a record of activities, thoughts, or beliefs. Some blogs operate mainly as news filters...</p>
-          <a className="text-indigo-500 inline-flex items-center mt-4">Learn More
+          <Link href={'/blogpost/[slug].js'}><a className="text-indigo-500 inline-flex items-center mt-4 cursor-pointer">Learn More
             <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14"></path>
               <path d="M12 5l7 7-7 7"></path>
             </svg>
-          </a>
+          </a></Link>
         </div>
       </div>
       <div className="py-8 flex flex-wrap md:flex-nowrap">
