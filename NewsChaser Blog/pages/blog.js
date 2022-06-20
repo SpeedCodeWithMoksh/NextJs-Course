@@ -16,7 +16,7 @@ const blog = () => {
         <div className="md:flex-grow">
           <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">Full Web</h2>
           <p className="leading-relaxed">blog, in full Web log or Weblog, online journal where an individual, group, or corporation presents a record of activities, thoughts, or beliefs. Some blogs operate mainly as news filters...</p>
-          <Link href={'/blogpost/[slug].js'}><a className="text-indigo-500 inline-flex items-center mt-4 cursor-pointer">Learn More
+          <Link href={'/blogpost/full-web'}><a className="text-indigo-500 inline-flex items-center mt-4">Learn More
             <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14"></path>
               <path d="M12 5l7 7-7 7"></path>
@@ -31,14 +31,14 @@ const blog = () => {
           <span className="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
         </div>
         <div className="md:flex-grow">
-          <h2 className="text-2xl font-medium text-gray-900 title-font mb-2"> Hand sanitizers can be used often</h2>
+          <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">Hand sanitizers can be used often</h2>
           <p className="leading-relaxed">An alcohol-based sanitizer does not create antibiotic resistance. Unlike other antiseptics and antibiotics, pathogens (harmful germs) do not seem to develop resistance to alcohol-based sanitizers...</p>
-          <a className="text-indigo-500 inline-flex items-center mt-4">Learn More
+          <Link href={'/blogpost/Hand-sanitizers-can-be-used-often'}><a className="text-indigo-500 inline-flex items-center mt-4">Learn More
             <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14"></path>
               <path d="M12 5l7 7-7 7"></path>
             </svg>
-          </a>
+          </a></Link>
         </div>
       </div>
       <div className="py-8 flex flex-wrap md:flex-nowrap">
@@ -50,12 +50,12 @@ const blog = () => {
         <div className="md:flex-grow">
           <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">How to make a website without writing a code</h2>
           <p className="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer...</p>
-          <a className="text-indigo-500 inline-flex items-center mt-4">Learn More
+          <Link href={'/blogpost/How-to-make-a-website-without-writing-a-code'}><a className="text-indigo-500 inline-flex items-center mt-4">Learn More
             <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14"></path>
               <path d="M12 5l7 7-7 7"></path>
             </svg>
-          </a>
+          </a></Link>
         </div>
       </div>
     </div>
