@@ -6,7 +6,7 @@ import Head from 'next/head'
 //  Step 2: Populate them inside the page 
 
 const Slug = () => {
-  const [blog, setblog] = useState([]);
+  const [blog, setblog] = useState();
   const router = useRouter();
   useEffect(() => {
     if (!router.isReady) return;
