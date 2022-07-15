@@ -32,7 +32,7 @@ const blog = (props) => {
 
                 <div className="md:flex-grow">
                   <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">{blogitem.title}</h2>
-                  <p className="leading-relaxed">{blogitem.content.substr(0, 160)}...</p>
+                  <p className="leading-relaxed">{blogitem.metadesc}...</p>
                   <div className="md:w-64 md:mb-0 mb-9 flex-shrink-0 flex flex-col">
                     <span className="font-semibold title-font text-gray-700">{blogitem.category}</span>
                     <span className="mt-1 text-gray-500 text-sm">{blogitem.date}</span>

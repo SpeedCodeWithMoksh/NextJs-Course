@@ -5,6 +5,9 @@ import Head from 'next/head'
 //  Step 2: Populate them inside the page 
 
 const Slug = (props) => {
+  function createMarkup(content) {
+    return {__html: content};
+  }
   const [blog, setblog] = useState(props.myBlog);
   
     
@@ -18,16 +21,13 @@ const Slug = (props) => {
     <div className='text-center'>
     <div className='text-3xl font-bold'>{blog && blog.title}</div>
     <hr className='mt-5 mb-9'/>
-    <p className='mx-22 lg:mx-32'>
-     {blog && blog.content}
-    </p>
+    {blog && <div className='mx-22 lg:mx-32' dangerouslySetInnerHTML={createMarkup(blog.content)} />}
     </div>
     </div>
   )
 }
 
-export async function getServerSideProps(context) {  
-  console.log(context.query)
+export async function getServerSideProps(context) {
   const {slug} = context.query;
 
   let data = await fetch(`http://localhost:3000/api/getblog?slug=${slug}`);
