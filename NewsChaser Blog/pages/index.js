@@ -10,18 +10,18 @@ export default function Home() {
       </Head>
 
       <main className=''>
-        <h1 className='text-left text-3xl font-bold mx-5'>
+        <h1 className='text-left text-xl md:text-3xl font-bold mx-5'>
           Welcome to Newschaser,
         </h1>
 
-        <p className='text-left text-2xl mx-5'>
+        <p className='text-left text-lg md:text-2xl mx-5'>
           Chase the news around the world!
         </p>
 
-        <h2 className='text-4xl font-bold mt-4'>Popular Blogs</h2>
+        <h2 className='text-3xl md:text-4xl font-bold mt-4'>Popular Blogs</h2>
 
         <section className="text-gray-600 body-font">
-          <div className="container px-5 py-24 mx-auto">
+          <div className="container px-5 py-12 md:py-24 mx-auto">
             <div className="flex flex-wrap -m-4">
               <div className="p-4 md:w-1/3">
                 <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
